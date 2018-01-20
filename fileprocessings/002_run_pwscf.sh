@@ -4,7 +4,7 @@
 #--------------------------------------------------------------------
 # Path definitions
 #--------------------------------------------------------------------
-ROOT="/home/aanand/Desktop/CuI/halides/cif/batch"
+ROOT="/var/lib/rundeck/halides"
 INBOUND="$ROOT/inbound"
 OUTBOUND="$ROOT/outbound"
 WORK="$ROOT/work"
