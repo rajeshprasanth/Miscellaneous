@@ -10,7 +10,7 @@ cat > 9013925.pz.$pressure.vcrelax.in << EOF
              calculation = 'vc-relax'
             restart_mode = 'from_scratch'
                   outdir = './output'
-              pseudo_dir = '/home/aanand/pseudo'
+              pseudo_dir = '/var/lib/rundeck/pseudo'
                  tstress = .true.
                  tprnfor = .true.
            etot_conv_thr = 1.0D-10
@@ -67,7 +67,7 @@ cat > 9013925.pbe.$pressure.vcrelax.in << EOF
              calculation = 'vc-relax'
             restart_mode = 'from_scratch'
                   outdir = './output'
-              pseudo_dir = '/home/aanand/pseudo'
+              pseudo_dir = '/var/lib/rundeck/pseudo'
                  tstress = .true.
                  tprnfor = .true.
            etot_conv_thr = 1.0D-10
