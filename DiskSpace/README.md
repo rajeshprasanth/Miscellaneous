@@ -1,12 +1,12 @@
 					Diskspace monitoring script for rundeck.
 
-	Usage: diskspace.sh <partition> <percentage of used space>
+	Usage: diskspace.sh <partition> <per centage of used space>
 
 	Example: 
 
 	When disk space is greater than specified, the script fails with the output shown as below.
 
-	aanand@ubuntu:~/misc/diskspace$ ./diskspace.sh /dev/loop0 70
+	aanand@ubuntu:~/misc/diskspace$ diskspace.sh /dev/loop0 70
 	+------------------------------------------------+
 	|               Disk Space utility               |
 	+------------------------------------------------+
