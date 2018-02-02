@@ -1,40 +1,40 @@
-				Diskspace monitoring script for rundeck.
-				
-Usage: diskspace.sh <partition> <percentage of used space>
+					Diskspace monitoring script for rundeck.
 
-Example: 
+	Usage: diskspace.sh <partition> <percentage of used space>
 
-When disk space is greater than specified, the script fails with the output shown as below.
+	Example: 
 
-aanand@ubuntu:~/misc/diskspace$ ./diskspace.sh /dev/loop0 70
-+------------------------------------------------+
-|               Disk Space utility               |
-+------------------------------------------------+
+	When disk space is greater than specified, the script fails with the output shown as below.
 
-Warning ::: Disk space on /dev/loop0
-            exceeded 70 % currently 96 %
+	aanand@ubuntu:~/misc/diskspace$ ./diskspace.sh /dev/loop0 70
+	+------------------------------------------------+
+	|               Disk Space utility               |
+	+------------------------------------------------+
 
-Disk space information for /dev/loop0
+	Warning ::: Disk space on /dev/loop0
+		    exceeded 70 % currently 96 %
 
-     Disk Available.........: 481M
-     Disk Used..............: 9.2G
-     Disk Allocated.........: 11G
-+------------------------------------------------+
-diskspace.sh: line 35: return: can only `return' from a function or sourced script
+	Disk space information for /dev/loop0
 
-When disk space is lesser than specified, the script runs with the output shown as below.
+	     Disk Available.........: 481M
+	     Disk Used..............: 9.2G
+	     Disk Allocated.........: 11G
+	+------------------------------------------------+
+	diskspace.sh: line 35: return: can only `return' from a function or sourced script
 
-aanand@ubuntu:~/misc/diskspace$ diskspace.sh /dev/loop0 98
-+------------------------------------------------+
-|               Disk Space utility               |
-+------------------------------------------------+
+	When disk space is lesser than specified, the script runs with the output shown as below.
 
-Information ::: Disk space on /dev/loop0
-           is under 98 % currently 96 %
+	aanand@ubuntu:~/misc/diskspace$ diskspace.sh /dev/loop0 98
+	+------------------------------------------------+
+	|               Disk Space utility               |
+	+------------------------------------------------+
 
-Disk space information for /dev/loop0
+	Information ::: Disk space on /dev/loop0
+		   is under 98 % currently 96 %
 
-     Disk Available.........: 481M
-     Disk Used..............: 9.2G
-     Disk Allocated.........: 11G
-+------------------------------------------------+
+	Disk space information for /dev/loop0
+
+	     Disk Available.........: 481M
+	     Disk Used..............: 9.2G
+	     Disk Allocated.........: 11G
+	+------------------------------------------------+
