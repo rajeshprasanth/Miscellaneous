@@ -10,18 +10,17 @@ aanand@ubuntu:~/misc/diskspace$ ./diskspace.sh /dev/loop0 70
 +------------------------------------------------+
 |               Disk Space utility               |
 +------------------------------------------------+
-|
-|Warning ::: Disk space on /dev/loop0
-|            exceeded 70 % currently 96 %
-|
-|Disk space information for /dev/loop0
-|
-|     Disk Available.........: 481M
-|     Disk Used..............: 9.2G
-|     Disk Allocated.........: 11G
-+------------------------------------------------+
-./diskspace.sh: line 35: return: can only `return' from a function or sourced script
 
+Warning ::: Disk space on /dev/loop0
+            exceeded 70 % currently 96 %
+
+Disk space information for /dev/loop0
+
+     Disk Available.........: 481M
+     Disk Used..............: 9.2G
+     Disk Allocated.........: 11G
++------------------------------------------------+
+diskspace.sh: line 35: return: can only `return' from a function or sourced script
 
 When disk space is lesser than specified, the script runs with the output shown as below.
 
