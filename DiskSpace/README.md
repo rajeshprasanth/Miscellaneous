@@ -1,6 +1,5 @@
 				Diskspace monitoring script for rundeck.
-
-
+				
 Usage: diskspace.sh <partition> <percentage of used space>
 
 Example: 
@@ -30,15 +29,13 @@ aanand@ubuntu:~/misc/diskspace$ diskspace.sh /dev/loop0 98
 +------------------------------------------------+
 |               Disk Space utility               |
 +------------------------------------------------+
-|
-|Information ::: Disk space on /dev/loop0
-|           is under 98 % currently 96 %
-|
-|Disk space information for /dev/loop0
-|
-|     Disk Available.........: 481M
-|     Disk Used..............: 9.2G
-|     Disk Allocated.........: 11G
+
+Information ::: Disk space on /dev/loop0
+           is under 98 % currently 96 %
+
+Disk space information for /dev/loop0
+
+     Disk Available.........: 481M
+     Disk Used..............: 9.2G
+     Disk Allocated.........: 11G
 +------------------------------------------------+
-
-
