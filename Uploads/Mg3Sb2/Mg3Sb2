@@ -1,0 +1,53 @@
+&CONTROL
+                   title = 'Mg3Sb2'
+             calculation = 'vc-relax'
+            restart_mode = 'from_scratch'
+                  outdir = './output'
+              pseudo_dir = '/home/rajeshprashanth/pseudo'
+                 tstress = .true.
+                 tprnfor = .true.
+           etot_conv_thr = 1.0D-8
+           forc_conv_thr = 1.0D-6
+/
+&SYSTEM
+                   ibrav = 0
+                       A = 4.57300
+                     nat = 5
+                    ntyp = 2
+		 ecutwfc = 80
+             occupations = 'smearing'
+                smearing = 'm-v'
+                 degauss = 0.015
+/
+&ELECTRONS
+                conv_thr = 1.0D-8
+        diago_cg_maxiter = 5000
+         diagonalization = 'cg'
+/
+&IONS
+            ion_dynamics = 'bfgs'
+/
+&CELL
+                   press = PRESSURE
+             cell_factor = 3.0
+          press_conv_thr = 0.1D0
+/
+
+ATOMIC_SPECIES
+  Sb  121.76000    PSEUDO_1
+  Mg   24.30500    PSEUDO_2
+
+ATOMIC_POSITIONS {crystal}
+Sb   0.333333333333333   0.666666666666667   0.235000000000000
+Sb   0.666666666666667   0.333333333333333   0.765000000000000
+Mg   0.000000000000000   0.000000000000000   0.000000000000000
+Mg   0.333333333333333   0.666666666666667   0.630000000000000
+Mg   0.666666666666667   0.333333333333333   0.370000000000000
+
+CELL_PARAMETERS {alat}
+ 0.866025403784439  -0.500000000000000   0.000000000000000
+ 0.000000000000000   1.000000000000000   0.000000000000000
+ 0.000000000000000   0.000000000000000   1.580800349879729
+
+K_POINTS {automatic}
+8 8 4  0 0 0
