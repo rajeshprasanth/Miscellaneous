@@ -1,0 +1,50 @@
+&CONTROL
+                   title = '9013920'
+             calculation = 'vc-relax'
+            restart_mode = 'from_scratch'
+                  outdir = './output'
+              pseudo_dir = '/home/aanand/pseudo'
+                 tstress = .true.
+                 tprnfor = .true.
+           etot_conv_thr = 1.0D-8
+           forc_conv_thr = 1.0D-6
+/
+&SYSTEM
+                   ibrav = 0
+                       A = 6.05450
+                     nat = 2
+                    ntyp = 2
+		 ecutwfc = 80
+             occupations = 'smearing'
+                smearing = 'm-v'
+                 degauss = 0.015
+/
+&ELECTRONS
+                conv_thr = 1.0D-8
+        diago_cg_maxiter = 5000
+         diagonalization = 'cg'
+/
+&IONS
+            ion_dynamics = 'bfgs'
+/
+&CELL
+                   press = PRESSURE
+             cell_factor = 3.0
+          press_conv_thr = 0.1D0
+/
+
+ATOMIC_SPECIES
+  Cu   63.54600  PSEUDO_1
+ I   126.90400   PSEUDO_2
+
+ATOMIC_POSITIONS {crystal}
+ I   0.250000000000000   0.250000000000000   0.250000000000000 
+Cu   0.000000000000000   0.000000000000000   0.000000000000000 
+
+CELL_PARAMETERS {alat}
+  0.500000000000000   0.500000000000000   0.000000000000000 
+  0.500000000000000   0.000000000000000   0.500000000000000 
+  0.000000000000000   0.500000000000000   0.500000000000000 
+
+K_POINTS automatic
+9 9 9  0 0 0
