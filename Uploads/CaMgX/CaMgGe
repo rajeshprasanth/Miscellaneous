@@ -3,7 +3,7 @@
              calculation = 'scf'
             restart_mode = 'from_scratch'
                   outdir = './outdir'
-              pseudo_dir = LOCAL_PSEUDO
+              pseudo_dir = '/home/rajeshprashanth/pseudo'
                  tstress = .true.
                  tprnfor = .true.
            etot_conv_thr = 1.0D-10
