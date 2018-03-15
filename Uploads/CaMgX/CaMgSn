@@ -1,6 +1,6 @@
 &CONTROL
                    title = 'CaMgSn'
-             calculation = 'scf'
+             calculation = 'vc-relax'
             restart_mode = 'from_scratch'
                   outdir = './outdir'
               pseudo_dir = '/home/rajeshprashanth/pseudo'
@@ -15,7 +15,7 @@
 		       A = 7.47520
 		     nat = 12
 		    ntyp = 3
-		 ecutwfc = ECUTWFC
+		 ecutwfc = 40
 /
 
 &ELECTRONS
@@ -39,9 +39,9 @@ CELL_PARAMETERS {alat}
 0.000000000000000   0.000000000000000   1.112331442636986
 
 ATOMIC_SPECIES
-Mg   24.30500  PSEUDO_1
-Ca   40.07800  PSEUDO_2
-Sn   118.7100  PSEUDO_3
+Mg   24.30500  Mg.pbe-mt_fhi.UPF
+Ca   40.07800  Ca.pbe-mt_fhi.UPF
+Sn   118.7100  Sn.pbe-mt_fhi.UPF
 
 ATOMIC_POSITIONS {crystal}
 Ca   0.019450000000000   0.250000000000000   0.680770000000000
