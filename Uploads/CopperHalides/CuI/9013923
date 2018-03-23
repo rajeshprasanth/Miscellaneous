@@ -1,9 +1,9 @@
 &CONTROL
                    title = '9013923'
-             calculation = 'vc-relax'
+             calculation = 'scf'
             restart_mode = 'from_scratch'
                   outdir = './output'
-              pseudo_dir = '/home/rajeshprashanth/pseudo'
+              pseudo_dir = '/home/rajeshprashanth/pseudo/'
                  tstress = .true.
                  tprnfor = .true.
            etot_conv_thr = 1.0D-8
@@ -11,13 +11,10 @@
 /
 &SYSTEM
                    ibrav = 0
-                       A = 4.02290
+                       A = ALAT
                      nat = 4
                     ntyp = 2
 		 ecutwfc = 80
-             occupations = 'smearing'
-                smearing = 'm-v'
-                 degauss = 0.015
 /
 &ELECTRONS
                 conv_thr = 1.0D-8
