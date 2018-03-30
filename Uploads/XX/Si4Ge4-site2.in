@@ -1,0 +1,51 @@
+&CONTROL
+		       title = 'Si4Ge4'
+                 calculation = 'vc-relax'
+                restart_mode = 'from_scratch'
+                      outdir = './output'
+                  pseudo_dir = '/home/rajeshprashanth/pseudo' 
+                     tstress = .true.
+                     tprnfor = .true.
+               etot_conv_thr = 1.0D-9
+               forc_conv_thr = 1.0D-6
+ /
+ &SYSTEM
+                       ibrav = 0
+		           A = 5.430700
+                         nat = 8
+                        ntyp = 2
+                     ecutwfc = 40
+ /
+ &ELECTRONS
+                    conv_thr = 1.0D-10
+            diago_cg_maxiter = 500
+             diagonalization = 'cg'
+ /
+ &IONS
+                ion_dynamics = 'bfgs'
+ /
+ &CELL
+	              press = 0
+             press_conv_thr = 0.1D0
+/
+ATOMIC_SPECIES
+  Ge   72.59   Ge.pw-mt_fhi.UPF
+  Si   28.085  Si.pw-mt_fhi.UPF
+
+ATOMIC_POSITIONS crystal
+Ge  0.000000    0.000000    0.000000
+Ge  0.250000    0.250000    0.250000
+Ge  0.000000    0.500000    0.500000
+Ge  0.750000    0.250000    0.750000
+Si  0.500000    0.500000    0.000000
+Si  0.500000    0.000000    0.500000
+Si  0.750000    0.750000    0.250000
+Si  0.250000    0.750000    0.750000
+
+CELL_PARAMETERS {alat}
+  1.000000000000000   0.000000000000000   0.000000000000000 
+  0.000000000000000   1.000000000000000   0.000000000000000 
+  0.000000000000000   0.000000000000000   1.000000000000000
+
+K_POINTS automatic
+4 4 4  0 0 0

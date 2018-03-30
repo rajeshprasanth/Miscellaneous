@@ -1,0 +1,14 @@
+############
+#
+# Example submit file for vanilla job
+#
+############
+
+Universe       = vanilla
+Executable     = wrapper.sh
+
+input   = /dev/null
+output  = runme.out             
+error   = runme.err  
+
+Queue
