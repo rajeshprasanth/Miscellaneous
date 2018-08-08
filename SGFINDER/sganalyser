@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+import sys
+import spglib
+import numpy as np
+import functions
+import sgacore
+
+functions.banner()
+
+inpfile = functions.readinputfilename()
+
+sysname,scale,latvec,numatom,species,coordinates = functions.parseinputfile(inpfile)
+
+functions.print_inputdump(sysname,scale,latvec,numatom,species,coordinates)
+
+sgacore.print_realspace_lattice(scale,latvec)
+dataset = sgacore.spacegroupdata(sysname,scale,latvec,numatom,species,coordinates)
+
+sgacore.print_pointgroup(dataset)

@@ -1,0 +1,129 @@
+
+
+// LOG ************************************************************************************
+QUERY DATE: 2018-05-09-17_52_32
+QUERY USER: -106.208.177.17
+// RESULTS ********************************************************************************
+AFLOW VERSION 3.1.191:  [aflow.org consortium - 2003-2018] 
+REAL LATTICE
+ Real space a b c alpha beta gamma: 6.3900000000 6.3900000000 6.3900000000 90.000 90.000 90.000
+ Real space a b c alpha beta gamma: 12.0753490670 12.0753490670 12.0753490670 90.000 90.000 90.000   Bohrs/Degs 
+ Real space Volume: 260.9171
+ Real space c/a = 1.0000
+BRAVAIS LATTICE OF THE CRYSTAL (pgroup_xtal)
+ Real space: Bravais Lattice Primitive        = TET
+ Real space: Lattice Variation                = TET
+ Real space: Lattice System                   = tetragonal
+ Real space: Pearson Symbol                   = tP6
+POINT GROUP CRYSTAL
+ Real space: Crystal Family                   = tetragonal
+ Real space: Crystal System                   = tetragonal
+ Real space: Crystal Class                    = ditetragonal-dipyramidal
+ Real space: Point Group (Hermann Mauguin)    = 4/mmm
+ Real space: Point Group (Schoenflies)        = D_4h
+ Real space: Point Group Orbifold             = *422
+ Real space: Point Group Type                 = centrosymmetric
+ Real space: Point Group Order                = 16
+ Real space: Point Group Structure            = 2 x dihedral
+SPACE GROUP OF THE CRYSTAL
+ Space group number                           = 123
+ Space group label (Hermann Mauguin)          = P4/mmm
+ Space group label (Hall)                     = -P 4 2
+ Space group label (Schoenflies)              = D_{4h}^{1}
+ Laue class                                   = 4/mmm
+ Crystal class                                = 4/mmm
+ITC REPRESENTATION OF CRYSTAL
+ Setting                                      = 1
+ Origin                                       =  0.0000e+00  0.0000e+00  0.0000e+00
+ General Wyckoff position
+  1 x,y,z
+  2 -x,-y,z
+  3 -y,x,z
+  4 y,-x,z
+  5 -x,y,-z
+  6 x,-y,-z
+  7 y,x,-z
+  8 -y,-x,-z
+  9 -x,-y,-z
+  10 x,y,-z
+  11 y,-x,-z
+  12 -y,x,-z
+  13 x,-y,z
+  14 -x,y,z
+  15 -y,-x,z
+  16 y,x,z
+ Representative Wyckoff positions
+   0.00000000000000   0.50000000000000   0.25000000000000   Mg 4 i 2mm. 
+   0.00000000000000   0.00000000000000   0.00000000000000   Ge 1 a 4/mmm 
+   0.50000000000000   0.50000000000000   0.50000000000000   Si 1 d 4/mmm 
+WYCCAR
+vasp           | SG: P4/mmm 123 PG: 4/mmm BL: P | sym_eps: 0.0276695 (WICKOFF P4./mmm #123)
+1.000000
+   4.5184000000  4.5184000000  6.3900000000 90.0000 90.0000 90.0000  123
+4 1 1 
+Direct(6) [A4B1C1] 
+   0.00000000000000   0.50000000000000   0.25000000000000  Mg    
+   0.50000000000000   0.00000000000000   0.25000000000000  Mg    
+   0.00000000000000   0.50000000000000   0.75000000000000  Mg    
+   0.50000000000000   0.00000000000000   0.75000000000000  Mg    
+   0.00000000000000   0.00000000000000   0.00000000000000  Ge    
+   0.50000000000000   0.50000000000000   0.50000000000000  Si    
+BRAVAIS LATTICE OF THE LATTICE (pgroup)
+ Real space: Bravais Lattice Primitive        = CUB
+ Real space: Lattice Variation                = CUB
+ Real space: Lattice System                   = cubic
+SUPERLATTICE (equally decorated)
+ Real space: Bravais Superlattice Primitive   = FCC
+ Real space: Superlattice Variation           = FCC
+ Real space: Superlattice System              = cubic
+ Real space: Pearson Symbol Superlattice      = cF12
+RECIPROCAL LATTICE
+ Reciprocal space lattice:
+   0.9832840856  0.0000000000 0.0000000000
+   0.0000000000  0.9832840856 0.0000000000
+   0.0000000000  0.0000000000 0.9832840856
+ Reciprocal space a b c alpha beta gamma: 0.9832840856 0.9832840856 0.9832840856 90.000 90.000 90.000
+ Reciprocal space Volume: 0.9507
+ Reciprocal lattice primitive            = CUB
+ Reciprocal lattice variation            = CUB
+SPRIM
+NO_RECURSION  [TET,TET,tP6] (STD_PRIM doi:10.1016/j.commatsci.2010.05.010)
+1.000000
+   4.51841233178204   0.00000000000000   0.00000000000000
+   0.00000000000000   4.51841233178204   0.00000000000000
+   0.00000000000000   0.00000000000000   6.39000000000000
+Mg Ge Si 
+4 1 1 
+Direct(6) [A4B1C1] 
+   0.50000000000000   0.00000000000000   0.75000000000000  Mg    
+   0.00000000000000   0.50000000000000   0.25000000000000  Mg    
+   0.00000000000000   0.50000000000000   0.75000000000000  Mg    
+   0.50000000000000   0.00000000000000   0.25000000000000  Mg    
+   0.00000000000000   0.00000000000000   0.00000000000000  Ge    
+   0.50000000000000   0.50000000000000   0.50000000000000  Si    
+SCONV
+NO_RECURSION  [TET,TET,tP6] (STD_CONV doi:10.1016/j.commatsci.2010.05.010)
+1.000000
+   4.51841233178204   0.00000000000000   0.00000000000000
+   0.00000000000000   4.51841233178204   0.00000000000000
+   0.00000000000000   0.00000000000000   6.39000000000000
+Mg Ge Si 
+4 1 1 
+Direct(6) [A4B1C1] 
+   0.50000000000000   0.00000000000000   0.75000000000000  Mg    
+   0.00000000000000   0.50000000000000   0.25000000000000  Mg    
+   0.00000000000000   0.50000000000000   0.75000000000000  Mg    
+   0.50000000000000   0.00000000000000   0.25000000000000  Mg    
+   0.00000000000000   0.00000000000000   0.00000000000000  Ge    
+   0.50000000000000   0.50000000000000   0.50000000000000  Si    
+
+
+Use of this software must be duly cited:
+S. Curtarolo, W. Setyawan, G. L. W. Hart, M. Jahnatek, R. V. Chepulskii, R. H. Taylor, S. Wang, J. Xue, K. Yang, O. Levy, M. Mehl, H. T. Stokes, D. O. Demchenko, and D. Morgan, 
+AFLOW: an automatic framework for high-throughput materials discovery, Comp. Mat. Sci. 58, 218-226 (2012). 
+[doi=10.1016/j.commatsci.2012.02.005]
+
+AFLOW PHP wrapper version 0.62 [(C) 2011-2018 Shidong Wang -- Richard Taylor -- Stefano Curtarolo]
+  
+
+
