@@ -1,0 +1,56 @@
+&CONTROL
+                       title = 'Mg3Sb2.pw.vdw.90.vcrelax'
+                 calculation = 'vc-relax'
+                restart_mode = 'from_scratch'
+                      outdir = './Mg3Sb2.pw.vdw.90.vcrelax'
+                  pseudo_dir = '/usr/share/espresso/pseudo/'
+                     tstress = .true.
+                     tprnfor = .true.
+                   verbosity = 'high'
+               etot_conv_thr = 1.0D-7
+               forc_conv_thr = 1.0D-6
+/
+
+&SYSTEM
+                       ibrav = 0
+                         nat = 3
+                        ntyp = 2
+                        nbnd = 16
+                     ecutwfc = 60
+/
+
+&ELECTRONS
+                    conv_thr = 1.0D-9
+            diago_cg_maxiter = 5000
+            electron_maxstep = 5000
+             diagonalization = 'cg'
+/
+
+&IONS
+                ion_dynamics = 'bfgs'
+/
+
+&CELL
+                       press = 0.0D0
+                 cell_dofree = RELAXDIR
+              press_conv_thr = 0.1D0
+/
+
+ATOMIC_SPECIES
+Li       6.941 208.9804 
+Sb 	 121.75 	 Sb.pbe-mt_fhi.UPF
+
+ATOMIC_POSITIONS {crystal}
+  Li      0.50000000000000   0.50000000000000   0.50000000000000  ! // Li 
+  Li      0.25000000000000   0.25000000000000   0.25000000000000  ! // Li 
+  Li      0.75000000000000   0.75000000000000   0.75000000000000  ! // Li 
+  Sb      0.00000000000000   0.00000000000000   0.00000000000000  ! // Sb 
+  
+CELL_PARAMETERS {angstrom}
+   4.01823700000000   0.00000000000000   2.31993000000000
+   1.33941200000000   3.78843000000000   2.31993000000000
+   0.00000000000000   0.00000000000000   4.63986000000000
+
+K_POINTS {automatic}
+10 10 10 0 0 0
+

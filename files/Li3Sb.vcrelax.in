@@ -1,0 +1,55 @@
+&CONTROL
+                       title = 'Li3Sb'
+                 calculation = 'vc-relax'
+                restart_mode = 'from_scratch'
+                      outdir = './Li3Sb'
+                     pseudo_dir = '/usr/share/espresso/pseudo/'
+                     tstress = .true.
+                     tprnfor = .true.
+                   verbosity = 'high'
+               etot_conv_thr = 1.0D-8
+               forc_conv_thr = 1.0D-7
+/
+
+&SYSTEM
+                       ibrav = 0
+                         nat = 3
+                        ntyp = 2
+                        nbnd = 16
+                     ecutwfc = 60
+/
+
+&ELECTRONS
+                    conv_thr = 1.0D-10
+            diago_cg_maxiter = 5000
+            electron_maxstep = 5000
+             diagonalization = 'cg'
+/
+
+&IONS
+                ion_dynamics = 'bfgs'
+/
+
+&CELL
+                       press = 0.0D0
+                 cell_dofree = 'all'
+              press_conv_thr = 0.1D0
+/
+
+ATOMIC_SPECIES
+Li       6.941           Li.pbe-mt_fhi.UPF
+Sb 	 121.75 	 Sb.pbe-mt_fhi.UPF
+
+ATOMIC_POSITIONS {crystal}
+  Li      0.50000000000000   0.50000000000000   0.50000000000000  ! // Li 
+  Li      0.25000000000000   0.25000000000000   0.25000000000000  ! // Li 
+  Li      0.75000000000000   0.75000000000000   0.75000000000000  ! // Li 
+  Sb      0.00000000000000   0.00000000000000   0.00000000000000  ! // Sb 
+  
+CELL_PARAMETERS {angstrom}
+   4.018237 0.000000 2.319930
+1.339412 3.788430 2.319930
+0.000000 0.000000 4.639860
+K_POINTS {automatic}
+10 10 10 0 0 0
+
