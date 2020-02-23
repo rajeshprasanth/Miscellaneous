@@ -1,0 +1,8 @@
+sleep 1000
+echo "command 1"
+ls
+echo "command 2"
+ps -fe|head
+echo "command 3"
+sleep  5
+echo "command 5"

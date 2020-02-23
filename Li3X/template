@@ -1,0 +1,36 @@
+&CONTROL
+                       title = 'AAAAA'
+                 calculation = 'vc-relax'
+                restart_mode = 'from_scratch'
+                      outdir = './AAAAA'
+                  pseudo_dir = '/usr/share/espresso/pseudo/'
+                     tstress = .true.
+                     tprnfor = .true.
+                   verbosity = 'high'
+               etot_conv_thr = 1.0D-6
+               forc_conv_thr = 1.0D-5
+/
+
+&SYSTEM
+                       ibrav = BBBBB
+                         nat = CCCCC
+                        ntyp = DDDDD
+                        nbnd = 16
+                     ecutwfc = 50
+/
+
+&ELECTRONS
+                    conv_thr = 1.0D-8
+            diago_cg_maxiter = 5000
+            electron_maxstep = 5000
+             diagonalization = 'cg'
+/
+
+&IONS
+                ion_dynamics = 'bfgs'
+/
+
+&CELL
+	               press = 0.0D0
+              press_conv_thr = 0.1D0
+/
