@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+#
+# jobsubmit [list]
+# [list] name of the file containing list of commands to run. 
+# The jobs will run one after the other.
+#
+#
+#
+export listfile=$1
+#
+if [ $# -ne 1 ];then
+  echo "=--------------------------------------------------------------------="
+  echo "  Usage: jobsubmit [name of file containing list of commands to run]"
+  echo "=--------------------------------------------------------------------="
+  exit 100
+fi
+#
+
+if [ ! -f $listfile ];then
+  echo "=--------------------------------------------------------------------="
+  echo "   Input file not found"
+  echo "=--------------------------------------------------------------------="
+  exit 200;
+fi
+
+if [ ! -e JOB_STATUS ];then
+  mkdir -p JOB_STATUS/RUNNING
+  mkdir -p JOB_STATUS/COMPLETED
+  mkdir -p JOB_STATUS/ABORTED
+fi
+#
+counter=1
+while IFS= read -r line
+do
+  $line &
+  pid=$!
+  touch JOB_STATUS/RUNNING/"COMMAND_$counter.RUNNING.$pid"
+  wait $pid
+  touch JOB_STATUS/RUNNING/"COMMAND_$counter.DONE"
+  
+  $((counter++))
+  
+done < "$listfile"
